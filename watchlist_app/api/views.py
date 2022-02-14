@@ -80,6 +80,11 @@ class WatchDetailAV(APIView):
         movie = WatchList.objects.get(pk=pk)
         movie.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
+    
+    
+    
+    
+# Function based view    
 # @api_view(['GET','POST'])
 # def movie_list(request):
 #     if request.method == 'GET':
